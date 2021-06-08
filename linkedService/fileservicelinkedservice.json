@@ -1,0 +1,13 @@
+{
+	"name": "fileservicelinkedservice",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "\\\\sftpstg5ripeyalh23qq.file.core.windows.net\\sftpfileshare",
+			"userId": "AZBiometricHealth",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlBST0NFU1NGSUxFU0RGXzdhMzU4M2ZiLWYxZDEtNDJkYy1hOTNmLTU3NWFmNDliOGM2NSINCn0="
+		}
+	}
+}

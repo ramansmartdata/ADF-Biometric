@@ -1,0 +1,9 @@
+{
+	"name": "processFilesDF",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0c1cab9e-1d6e-4905-9658-0817c19905b8",
+		"tenantId": "89a9db4f-1251-41cf-8a01-be56cdd08e6f"
+	}
+}

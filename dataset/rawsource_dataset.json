@@ -1,0 +1,22 @@
+{
+	"name": "rawsource_dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sftp_biometric_linked",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "SftpLocation",
+				"folderPath": "/upload/Inbound"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
