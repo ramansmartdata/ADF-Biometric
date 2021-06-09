@@ -129,7 +129,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"functionName": {
-									"value": "@concat('QueueFile/',toUpper(item().name))",
+									"value": "@concat('api/decryptFile/',item().name)",
 									"type": "Expression"
 								},
 								"method": "POST",
