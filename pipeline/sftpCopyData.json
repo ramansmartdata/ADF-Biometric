@@ -45,7 +45,10 @@
 				"inputs": [
 					{
 						"referenceName": "csvSource",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"filename": "Sample-Spreadsheet-10-rows.csv"
+						}
 					}
 				],
 				"outputs": [
