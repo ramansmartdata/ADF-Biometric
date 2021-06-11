@@ -1,0 +1,159 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-biomatric"
+		},
+		"AZSQL837I_connectionString": {
+			"value": ""
+		},
+		"AZSQL837p_connectionString": {
+			"value": ""
+		},
+		"AZSQLHL7_ADT01_connectionString": {
+			"value": ""
+		},
+		"AZSQLHL7_ADT02_connectionString": {
+			"value": ""
+		},
+		"AZSQLHL7_ADT03_connectionString": {
+			"value": ""
+		},
+		"AZSQLHL7_ADT05_connectionString": {
+			"value": ""
+		},
+		"AZSQLHL7_ADT08_connectionString": {
+			"value": ""
+		},
+		"AZSql834_connectionString": {
+			"value": ""
+		},
+		"AZSql837D_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"AzureSQL274DB_connectionString": {
+			"value": ""
+		},
+		"AzureSynapseAnalytics1_connectionString": {
+			"value": ""
+		},
+		"AzureSynapseAnalytics2_connectionString": {
+			"value": ""
+		},
+		"AzureSynapseAnalytics834_connectionString": {
+			"value": ""
+		},
+		"AzureSynapseAnalytics837D_connectionString": {
+			"value": ""
+		},
+		"AzureSynapseAnalytics837I_connectionString": {
+			"value": ""
+		},
+		"AzureSynapseAnalyticsHL7ADT02_connectionString": {
+			"value": ""
+		},
+		"AzureSynapseAnalyticsHL7_ADT01_connectionString": {
+			"value": ""
+		},
+		"AzureSynapseAnalyticsHL7_ADT03_connectionString": {
+			"value": ""
+		},
+		"AzureSynapseAnalyticsHL7_ADT05_connectionString": {
+			"value": ""
+		},
+		"AzureSynapseAnalyticsHL7_ADT08_connectionString": {
+			"value": ""
+		},
+		"af-decryptBlob_functionKey": {
+			"value": ""
+		},
+		"bioMetricHealthSFTP_password": {
+			"value": ""
+		},
+		"blob_biometric_linked_accountKey": {
+			"value": ""
+		},
+		"fileservicelinkedservice_password": {
+			"value": ""
+		},
+		"linkedService274_connectionString": {
+			"value": ""
+		},
+		"linkedService834_connectionString": {
+			"value": ""
+		},
+		"linkedService837D_connectionString": {
+			"value": ""
+		},
+		"linkedService837I_connectionString": {
+			"value": ""
+		},
+		"linkedService837P_connectionString": {
+			"value": ""
+		},
+		"linkedServiceHL7ADT02_connectionString": {
+			"value": ""
+		},
+		"linkedServiceHL7ADT05_connectionString": {
+			"value": ""
+		},
+		"linkedServiceHL7_ADT01_connectionString": {
+			"value": ""
+		},
+		"linkedServiceHL7_ADT05_connectionString": {
+			"value": ""
+		},
+		"linkedServiceHL7_ADT08_connectionString": {
+			"value": ""
+		},
+		"sftp_biometric_linked_password": {
+			"value": ""
+		},
+		"sftpsource_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://azdatalakev2.dfs.core.windows.net"
+		},
+		"af-decryptBlob_properties_typeProperties_functionAppUrl": {
+			"value": "https://azpgpdecryptfile.azurewebsites.net"
+		},
+		"bioMetricHealthSFTP_properties_typeProperties_host": {
+			"value": "20.81.27.30"
+		},
+		"bioMetricHealthSFTP_properties_typeProperties_userName": {
+			"value": " AZBiometricHealth"
+		},
+		"blob_biometric_linked_properties_typeProperties_url": {
+			"value": "https://sabiometric.dfs.core.windows.net"
+		},
+		"fileservicelinkedservice_properties_typeProperties_host": {
+			"value": "\\\\sftpstg5ripeyalh23qq.file.core.windows.net\\sftpfileshare"
+		},
+		"fileservicelinkedservice_properties_typeProperties_userId": {
+			"value": "AZBiometricHealth"
+		},
+		"sftp_biometric_linked_properties_typeProperties_host": {
+			"value": "kqrfrx7pghel6.eastus.azurecontainer.io"
+		},
+		"sftp_biometric_linked_properties_typeProperties_userName": {
+			"value": "AZBiometricHealth"
+		},
+		"sftpsource_properties_typeProperties_host": {
+			"value": "40.114.118.70"
+		},
+		"sftpsource_properties_typeProperties_userName": {
+			"value": "azlinuxVM"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
