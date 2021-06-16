@@ -77,7 +77,7 @@
 		},
 		"af-decryptBlob_properties_typeProperties_functionAppUrl": {
 			"type": "string",
-			"defaultValue": "https://azpgpdecryptfile.azurewebsites.net"
+			"defaultValue": "https://fa-decryptfile.azurewebsites.net"
 		},
 		"bioMetricHealthSFTP_properties_typeProperties_host": {
 			"type": "string",
@@ -101,7 +101,7 @@
 		},
 		"sftp_biometric_linked_properties_typeProperties_host": {
 			"type": "string",
-			"defaultValue": "kqrfrx7pghel6.eastus.azurecontainer.io"
+			"defaultValue": "sjgm3yzmtomr6.eastus.azurecontainer.io"
 		},
 		"sftp_biometric_linked_properties_typeProperties_userName": {
 			"type": "string",

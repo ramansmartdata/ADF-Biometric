@@ -120,7 +120,7 @@
 			"value": "https://azdatalakev2.dfs.core.windows.net"
 		},
 		"af-decryptBlob_properties_typeProperties_functionAppUrl": {
-			"value": "https://azpgpdecryptfile.azurewebsites.net"
+			"value": "https://fa-decryptfile.azurewebsites.net"
 		},
 		"bioMetricHealthSFTP_properties_typeProperties_host": {
 			"value": "20.81.27.30"
@@ -138,7 +138,7 @@
 			"value": "AZBiometricHealth"
 		},
 		"sftp_biometric_linked_properties_typeProperties_host": {
-			"value": "kqrfrx7pghel6.eastus.azurecontainer.io"
+			"value": "sjgm3yzmtomr6.eastus.azurecontainer.io"
 		},
 		"sftp_biometric_linked_properties_typeProperties_userName": {
 			"value": "AZBiometricHealth"
