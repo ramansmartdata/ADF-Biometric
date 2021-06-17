@@ -95,6 +95,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'functionKey' of 'af-decryptBlob'"
 		},
+		"batchEditProcessor_accessKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessKey' of 'batchEditProcessor'"
+		},
 		"bioMetricHealthSFTP_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'bioMetricHealthSFTP'"
@@ -147,6 +151,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'linkedServiceHL7_ADT08'"
 		},
+		"saEdiProcessorBatch_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'saEdiProcessorBatch'"
+		},
 		"sftp_biometric_linked_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'sftp_biometric_linked'"
@@ -155,14 +163,6 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'sftpsource'"
 		},
-		"saEdiProcessorBatch_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'saEdiProcessorBatch'"
-		},
-		"batchEditProcessor_accessKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accessKey' of 'batchEditProcessor'"
-		},
 		"AzureDataLakeStorage_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://azdatalakev2.dfs.core.windows.net"
@@ -170,6 +170,18 @@
 		"af-decryptBlob_properties_typeProperties_functionAppUrl": {
 			"type": "string",
 			"defaultValue": "https://fa-decryptfile.azurewebsites.net"
+		},
+		"batchEditProcessor_properties_typeProperties_accountName": {
+			"type": "string",
+			"defaultValue": "babiomatric"
+		},
+		"batchEditProcessor_properties_typeProperties_batchUri": {
+			"type": "string",
+			"defaultValue": "https://babiomatric.eastus.batch.azure.com"
+		},
+		"batchEditProcessor_properties_typeProperties_poolName": {
+			"type": "string",
+			"defaultValue": "bapoolbiomatric"
 		},
 		"bioMetricHealthSFTP_properties_typeProperties_host": {
 			"type": "string",
@@ -206,18 +218,6 @@
 		"sftpsource_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "azlinuxVM"
-		},
-		"batchEditProcessor_properties_typeProperties_accountName": {
-			"type": "string",
-			"defaultValue": "babiomatric"
-		},
-		"batchEditProcessor_properties_typeProperties_batchUri": {
-			"type": "string",
-			"defaultValue": "https://babiomatric.eastus.batch.azure.com"
-		},
-		"batchEditProcessor_properties_typeProperties_poolName": {
-			"type": "string",
-			"defaultValue": "bapoolbiomatric"
 		},
 		"containerUri": {
 			"type": "string",
@@ -372,14 +372,14 @@
 					"linkedServiceHL7_ADT08_connectionString": {
 						"value": "[parameters('linkedServiceHL7_ADT08_connectionString')]"
 					},
+					"saEdiProcessorBatch_connectionString": {
+						"value": "[parameters('saEdiProcessorBatch_connectionString')]"
+					},
 					"sftp_biometric_linked_password": {
 						"value": "[parameters('sftp_biometric_linked_password')]"
 					},
 					"sftpsource_password": {
 						"value": "[parameters('sftpsource_password')]"
-					},
-					"saEdiProcessorBatch_connectionString": {
-						"value": "[parameters('saEdiProcessorBatch_connectionString')]"
 					},
 					"af-decryptBlob_properties_typeProperties_functionAppUrl": {
 						"value": "[parameters('af-decryptBlob_properties_typeProperties_functionAppUrl')]"

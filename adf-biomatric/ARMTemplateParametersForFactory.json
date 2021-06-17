@@ -71,6 +71,9 @@
 		"af-decryptBlob_functionKey": {
 			"value": ""
 		},
+		"batchEditProcessor_accessKey": {
+			"value": ""
+		},
 		"bioMetricHealthSFTP_password": {
 			"value": ""
 		},
@@ -110,16 +113,13 @@
 		"linkedServiceHL7_ADT08_connectionString": {
 			"value": ""
 		},
+		"saEdiProcessorBatch_connectionString": {
+			"value": ""
+		},
 		"sftp_biometric_linked_password": {
 			"value": ""
 		},
 		"sftpsource_password": {
-			"value": ""
-		},
-		"saEdiProcessorBatch_connectionString": {
-			"value": ""
-		},
-		"batchEditProcessor_accessKey": {
 			"value": ""
 		},
 		"AzureDataLakeStorage_properties_typeProperties_url": {
@@ -127,6 +127,15 @@
 		},
 		"af-decryptBlob_properties_typeProperties_functionAppUrl": {
 			"value": "https://fa-decryptfile.azurewebsites.net"
+		},
+		"batchEditProcessor_properties_typeProperties_accountName": {
+			"value": "babiomatric"
+		},
+		"batchEditProcessor_properties_typeProperties_batchUri": {
+			"value": "https://babiomatric.eastus.batch.azure.com"
+		},
+		"batchEditProcessor_properties_typeProperties_poolName": {
+			"value": "bapoolbiomatric"
 		},
 		"bioMetricHealthSFTP_properties_typeProperties_host": {
 			"value": "20.81.27.30"
@@ -154,15 +163,6 @@
 		},
 		"sftpsource_properties_typeProperties_userName": {
 			"value": "azlinuxVM"
-		},
-		"batchEditProcessor_properties_typeProperties_accountName": {
-			"value": "babiomatric"
-		},
-		"batchEditProcessor_properties_typeProperties_batchUri": {
-			"value": "https://babiomatric.eastus.batch.azure.com"
-		},
-		"batchEditProcessor_properties_typeProperties_poolName": {
-			"value": "bapoolbiomatric"
 		}
 	}
 }

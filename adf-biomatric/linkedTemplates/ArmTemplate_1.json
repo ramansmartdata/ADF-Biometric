@@ -67,6 +67,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'linkedServiceHL7_ADT08'"
 		},
+		"saEdiProcessorBatch_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'saEdiProcessorBatch'"
+		},
 		"sftp_biometric_linked_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'sftp_biometric_linked'"
@@ -74,10 +78,6 @@
 		"sftpsource_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'sftpsource'"
-		},
-		"saEdiProcessorBatch_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'saEdiProcessorBatch'"
 		},
 		"af-decryptBlob_properties_typeProperties_functionAppUrl": {
 			"type": "string",
@@ -343,6 +343,19 @@
 			"dependsOn": []
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/saEdiProcessorBatch')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"connectionString": "[parameters('saEdiProcessorBatch_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/sftp_biometric_linked')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
@@ -380,19 +393,6 @@
 						"type": "SecureString",
 						"value": "[parameters('sftpsource_password')]"
 					}
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/saEdiProcessorBatch')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('saEdiProcessorBatch_connectionString')]"
 				}
 			},
 			"dependsOn": []
