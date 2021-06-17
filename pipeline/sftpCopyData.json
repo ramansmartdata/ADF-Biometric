@@ -167,7 +167,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"command": {
-									"value": "@cmd  /C \"7z e -y %AZ_BATCH_TASK_WORKING_DIR%\\EdiParserProd.7z  &&  ediFabricParser \"",
+									"value": "@cmd  /C \"7z e -y %AZ_BATCH_TASK_WORKING_DIR%\\EdiParserProd.7z  &&  ediFabricParser\"",
 									"type": "Expression"
 								},
 								"resourceLinkedService": {
