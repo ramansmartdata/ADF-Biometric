@@ -166,7 +166,10 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"command": "cmd  /C \"7z e -y %AZ_BATCH_TASK_WORKING_DIR%\\EdiParserProd.7z  &&  ediFabricParser\"",
+								"command": {
+									"value": "@cmd  /C \"7z e -y %AZ_BATCH_TASK_WORKING_DIR%\\EdiParserProd.7z  &&  ediFabricParser -item().name\"",
+									"type": "Expression"
+								},
 								"resourceLinkedService": {
 									"referenceName": "saEdiProcessorBatch",
 									"type": "LinkedServiceReference"
