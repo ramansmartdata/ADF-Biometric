@@ -145,6 +145,42 @@
 								"referenceName": "af-decryptBlob",
 								"type": "LinkedServiceReference"
 							}
+						},
+						{
+							"name": "Custom1",
+							"type": "Custom",
+							"dependsOn": [
+								{
+									"activity": "Azure Function1",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"command": "cmd  /C \"7z e -y %AZ_BATCH_TASK_WORKING_DIR%\\EdiParserProd.7z  &&  ediFabricParser\"",
+								"resourceLinkedService": {
+									"referenceName": "saEdiProcessorBatch",
+									"type": "LinkedServiceReference"
+								},
+								"folderPath": "application",
+								"referenceObjects": {
+									"linkedServices": [],
+									"datasets": []
+								}
+							},
+							"linkedServiceName": {
+								"referenceName": "batchEditProcessor",
+								"type": "LinkedServiceReference"
+							}
 						}
 					]
 				}
