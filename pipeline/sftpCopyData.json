@@ -172,6 +172,12 @@
 									"type": "LinkedServiceReference"
 								},
 								"folderPath": "applications/EdiParser",
+								"extendedProperties": {
+									"fileName": {
+										"value": "@item().name",
+										"type": "Expression"
+									}
+								},
 								"referenceObjects": {
 									"linkedServices": [],
 									"datasets": []
