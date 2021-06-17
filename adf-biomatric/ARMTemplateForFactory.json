@@ -155,6 +155,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'sftpsource'"
 		},
+		"saEdiProcessorBatch_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'saEdiProcessorBatch'"
+		},
+		"batchEditProcessor_accessKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessKey' of 'batchEditProcessor'"
+		},
 		"AzureDataLakeStorage_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://azdatalakev2.dfs.core.windows.net"
@@ -198,6 +206,18 @@
 		"sftpsource_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "azlinuxVM"
+		},
+		"batchEditProcessor_properties_typeProperties_accountName": {
+			"type": "string",
+			"defaultValue": "babiomatric"
+		},
+		"batchEditProcessor_properties_typeProperties_batchUri": {
+			"type": "string",
+			"defaultValue": "https://babiomatric.eastus.batch.azure.com"
+		},
+		"batchEditProcessor_properties_typeProperties_poolName": {
+			"type": "string",
+			"defaultValue": "bapoolbiomatric"
 		}
 	},
 	"variables": {
@@ -356,6 +376,42 @@
 										"referenceName": "af-decryptBlob",
 										"type": "LinkedServiceReference"
 									}
+								},
+								{
+									"name": "Custom1",
+									"type": "Custom",
+									"dependsOn": [
+										{
+											"activity": "Azure Function1",
+											"dependencyConditions": [
+												"Succeeded"
+											]
+										}
+									],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"command": "cmd  /C \"7z e -y %AZ_BATCH_TASK_WORKING_DIR%\\EdiParserProd.7z  &&  ediFabricParser\"",
+										"resourceLinkedService": {
+											"referenceName": "saEdiProcessorBatch",
+											"type": "LinkedServiceReference"
+										},
+										"folderPath": "application",
+										"referenceObjects": {
+											"linkedServices": [],
+											"datasets": []
+										}
+									},
+									"linkedServiceName": {
+										"referenceName": "batchEditProcessor",
+										"type": "LinkedServiceReference"
+									}
 								}
 							]
 						}
@@ -367,7 +423,9 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/csvSource')]",
 				"[concat(variables('factoryId'), '/datasets/rawFiles_SinkDataset')]",
-				"[concat(variables('factoryId'), '/linkedServices/af-decryptBlob')]"
+				"[concat(variables('factoryId'), '/linkedServices/af-decryptBlob')]",
+				"[concat(variables('factoryId'), '/linkedServices/batchEditProcessor')]",
+				"[concat(variables('factoryId'), '/linkedServices/saEdiProcessorBatch')]"
 			]
 		},
 		{
@@ -1009,6 +1067,44 @@
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/saEdiProcessorBatch')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"connectionString": "[parameters('saEdiProcessorBatch_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/batchEditProcessor')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBatch",
+				"typeProperties": {
+					"accountName": "[parameters('batchEditProcessor_properties_typeProperties_accountName')]",
+					"accessKey": {
+						"type": "SecureString",
+						"value": "[parameters('batchEditProcessor_accessKey')]"
+					},
+					"batchUri": "[parameters('batchEditProcessor_properties_typeProperties_batchUri')]",
+					"poolName": "[parameters('batchEditProcessor_properties_typeProperties_poolName')]",
+					"linkedServiceName": {
+						"referenceName": "saEdiProcessorBatch",
+						"type": "LinkedServiceReference"
+					}
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/saEdiProcessorBatch')]"
+			]
 		}
 	]
 }

@@ -6,75 +6,12 @@
 			"type": "string",
 			"metadata": "Data Factory name",
 			"defaultValue": "adf-biomatric"
-		},
-		"batchEditProcessor_accessKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accessKey' of 'batchEditProcessor'"
-		},
-		"batchEditProcessor_properties_typeProperties_accountName": {
-			"type": "string",
-			"defaultValue": "babiomatric"
-		},
-		"batchEditProcessor_properties_typeProperties_batchUri": {
-			"type": "string",
-			"defaultValue": "https://babiomatric.eastus.batch.azure.com"
-		},
-		"batchEditProcessor_properties_typeProperties_poolName": {
-			"type": "string",
-			"defaultValue": "bapoolbiomatric"
 		}
 	},
 	"variables": {
 		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
 	},
 	"resources": [
-		{
-			"name": "[concat(parameters('factoryName'), '/rawsource_dataset')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "sftp_biometric_linked",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "DelimitedText",
-				"typeProperties": {
-					"location": {
-						"type": "SftpLocation",
-						"folderPath": "/upload/Inbound"
-					},
-					"columnDelimiter": ",",
-					"escapeChar": "\\",
-					"quoteChar": "\""
-				},
-				"schema": []
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/batchEditProcessor')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBatch",
-				"typeProperties": {
-					"accountName": "[parameters('batchEditProcessor_properties_typeProperties_accountName')]",
-					"accessKey": {
-						"type": "SecureString",
-						"value": "[parameters('batchEditProcessor_accessKey')]"
-					},
-					"batchUri": "[parameters('batchEditProcessor_properties_typeProperties_batchUri')]",
-					"poolName": "[parameters('batchEditProcessor_properties_typeProperties_poolName')]",
-					"linkedServiceName": {
-						"referenceName": "saEdiProcessorBatch",
-						"type": "LinkedServiceReference"
-					}
-				}
-			},
-			"dependsOn": []
-		},
 		{
 			"name": "[concat(parameters('factoryName'), '/sftpCopyData')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
@@ -133,8 +70,7 @@
 						"outputs": [
 							{
 								"referenceName": "rawFiles_SinkDataset",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						]
 					},
@@ -160,8 +96,7 @@
 						"typeProperties": {
 							"dataset": {
 								"referenceName": "rawFiles_SinkDataset",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							},
 							"fieldList": [
 								"childItems"
@@ -217,7 +152,6 @@
 											"type": "Expression"
 										},
 										"method": "POST",
-										"headers": {},
 										"body": {
 											"value": "{\"filename\":\"@{item().name}\"}",
 											"type": "Expression"
@@ -274,6 +208,29 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/batchEditProcessor')]"
 			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/batchEditProcessor')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBatch",
+				"typeProperties": {
+					"accountName": "babiomatric",
+					"accessKey": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"batchUri": "https://babiomatric.eastus.batch.azure.com",
+					"poolName": "bapoolbiomatric",
+					"linkedServiceName": {
+						"referenceName": "saEdiProcessorBatch",
+						"type": "LinkedServiceReference"
+					}
+				}
+			},
+			"dependsOn": []
 		}
 	]
 }

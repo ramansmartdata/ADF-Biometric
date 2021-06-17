@@ -116,6 +116,12 @@
 		"sftpsource_password": {
 			"value": ""
 		},
+		"saEdiProcessorBatch_connectionString": {
+			"value": ""
+		},
+		"batchEditProcessor_accessKey": {
+			"value": ""
+		},
 		"AzureDataLakeStorage_properties_typeProperties_url": {
 			"value": "https://azdatalakev2.dfs.core.windows.net"
 		},
@@ -148,6 +154,15 @@
 		},
 		"sftpsource_properties_typeProperties_userName": {
 			"value": "azlinuxVM"
+		},
+		"batchEditProcessor_properties_typeProperties_accountName": {
+			"value": "babiomatric"
+		},
+		"batchEditProcessor_properties_typeProperties_batchUri": {
+			"value": "https://babiomatric.eastus.batch.azure.com"
+		},
+		"batchEditProcessor_properties_typeProperties_poolName": {
+			"value": "bapoolbiomatric"
 		}
 	}
 }
