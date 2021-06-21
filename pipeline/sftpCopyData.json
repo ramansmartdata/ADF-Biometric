@@ -151,7 +151,7 @@
 							"type": "Custom",
 							"dependsOn": [
 								{
-									"activity": "Delete1",
+									"activity": "DeleteFromRaw",
 									"dependencyConditions": [
 										"Succeeded"
 									]
@@ -192,7 +192,7 @@
 							}
 						},
 						{
-							"name": "Delete1",
+							"name": "DeleteFromRaw",
 							"type": "Delete",
 							"dependsOn": [
 								{
