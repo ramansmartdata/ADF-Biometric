@@ -151,7 +151,7 @@
 							"type": "Custom",
 							"dependsOn": [
 								{
-									"activity": "Azure Function1",
+									"activity": "Delete1",
 									"dependencyConditions": [
 										"Succeeded"
 									]
@@ -189,6 +189,42 @@
 							"linkedServiceName": {
 								"referenceName": "batchEditProcessor",
 								"type": "LinkedServiceReference"
+							}
+						},
+						{
+							"name": "Delete1",
+							"type": "Delete",
+							"dependsOn": [
+								{
+									"activity": "Azure Function1",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"dataset": {
+									"referenceName": "rawFiles_SinkDataset",
+									"type": "DatasetReference"
+								},
+								"enableLogging": false,
+								"storeSettings": {
+									"type": "AzureBlobFSReadSettings",
+									"recursive": false,
+									"wildcardFileName": {
+										"value": "@{item().name}",
+										"type": "Expression"
+									},
+									"enablePartitionDiscovery": false
+								}
 							}
 						}
 					]
