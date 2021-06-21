@@ -7,90 +7,6 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adf-biomatric"
 		},
-		"AZSQL837I_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AZSQL837I'"
-		},
-		"AZSQL837p_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AZSQL837p'"
-		},
-		"AZSQLHL7_ADT01_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AZSQLHL7_ADT01'"
-		},
-		"AZSQLHL7_ADT02_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AZSQLHL7_ADT02'"
-		},
-		"AZSQLHL7_ADT03_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AZSQLHL7_ADT03'"
-		},
-		"AZSQLHL7_ADT05_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AZSQLHL7_ADT05'"
-		},
-		"AZSQLHL7_ADT08_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AZSQLHL7_ADT08'"
-		},
-		"AZSql834_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AZSql834'"
-		},
-		"AZSql837D_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AZSql837D'"
-		},
-		"AzureDataLakeStorage_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage'"
-		},
-		"AzureSQL274DB_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSQL274DB'"
-		},
-		"AzureSynapseAnalytics1_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalytics1'"
-		},
-		"AzureSynapseAnalytics2_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalytics2'"
-		},
-		"AzureSynapseAnalytics834_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalytics834'"
-		},
-		"AzureSynapseAnalytics837D_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalytics837D'"
-		},
-		"AzureSynapseAnalytics837I_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalytics837I'"
-		},
-		"AzureSynapseAnalyticsHL7ADT02_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalyticsHL7ADT02'"
-		},
-		"AzureSynapseAnalyticsHL7_ADT01_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalyticsHL7_ADT01'"
-		},
-		"AzureSynapseAnalyticsHL7_ADT03_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalyticsHL7_ADT03'"
-		},
-		"AzureSynapseAnalyticsHL7_ADT05_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalyticsHL7_ADT05'"
-		},
-		"AzureSynapseAnalyticsHL7_ADT08_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalyticsHL7_ADT08'"
-		},
 		"af-decryptBlob_functionKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'functionKey' of 'af-decryptBlob'"
@@ -107,50 +23,6 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'blob_biometric_linked'"
 		},
-		"fileservicelinkedservice_password": {
-			"type": "secureString",
-			"metadata": "Secure string for 'password' of 'fileservicelinkedservice'"
-		},
-		"linkedService274_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'linkedService274'"
-		},
-		"linkedService834_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'linkedService834'"
-		},
-		"linkedService837D_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'linkedService837D'"
-		},
-		"linkedService837I_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'linkedService837I'"
-		},
-		"linkedService837P_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'linkedService837P'"
-		},
-		"linkedServiceHL7ADT02_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'linkedServiceHL7ADT02'"
-		},
-		"linkedServiceHL7ADT05_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'linkedServiceHL7ADT05'"
-		},
-		"linkedServiceHL7_ADT01_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'linkedServiceHL7_ADT01'"
-		},
-		"linkedServiceHL7_ADT05_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'linkedServiceHL7_ADT05'"
-		},
-		"linkedServiceHL7_ADT08_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'linkedServiceHL7_ADT08'"
-		},
 		"saEdiProcessorBatch_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'saEdiProcessorBatch'"
@@ -162,10 +34,6 @@
 		"sftpsource_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'sftpsource'"
-		},
-		"AzureDataLakeStorage_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://azdatalakev2.dfs.core.windows.net"
 		},
 		"af-decryptBlob_properties_typeProperties_functionAppUrl": {
 			"type": "string",
@@ -181,7 +49,7 @@
 		},
 		"batchEditProcessor_properties_typeProperties_poolName": {
 			"type": "string",
-			"defaultValue": "bapoolbiomatric"
+			"defaultValue": "babiomatricpoolmultitask"
 		},
 		"bioMetricHealthSFTP_properties_typeProperties_host": {
 			"type": "string",
@@ -194,14 +62,6 @@
 		"blob_biometric_linked_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://sabiometric.dfs.core.windows.net"
-		},
-		"fileservicelinkedservice_properties_typeProperties_host": {
-			"type": "string",
-			"defaultValue": "\\\\sftpstg5ripeyalh23qq.file.core.windows.net\\sftpfileshare"
-		},
-		"fileservicelinkedservice_properties_typeProperties_userId": {
-			"type": "string",
-			"defaultValue": "AZBiometricHealth"
 		},
 		"sftp_biometric_linked_properties_typeProperties_host": {
 			"type": "string",
@@ -246,90 +106,6 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"AZSQL837I_connectionString": {
-						"value": "[parameters('AZSQL837I_connectionString')]"
-					},
-					"AZSQL837p_connectionString": {
-						"value": "[parameters('AZSQL837p_connectionString')]"
-					},
-					"AZSQLHL7_ADT01_connectionString": {
-						"value": "[parameters('AZSQLHL7_ADT01_connectionString')]"
-					},
-					"AZSQLHL7_ADT02_connectionString": {
-						"value": "[parameters('AZSQLHL7_ADT02_connectionString')]"
-					},
-					"AZSQLHL7_ADT03_connectionString": {
-						"value": "[parameters('AZSQLHL7_ADT03_connectionString')]"
-					},
-					"AZSQLHL7_ADT05_connectionString": {
-						"value": "[parameters('AZSQLHL7_ADT05_connectionString')]"
-					},
-					"AZSQLHL7_ADT08_connectionString": {
-						"value": "[parameters('AZSQLHL7_ADT08_connectionString')]"
-					},
-					"AZSql834_connectionString": {
-						"value": "[parameters('AZSql834_connectionString')]"
-					},
-					"AZSql837D_connectionString": {
-						"value": "[parameters('AZSql837D_connectionString')]"
-					},
-					"AzureDataLakeStorage_accountKey": {
-						"value": "[parameters('AzureDataLakeStorage_accountKey')]"
-					},
-					"AzureSQL274DB_connectionString": {
-						"value": "[parameters('AzureSQL274DB_connectionString')]"
-					},
-					"AzureSynapseAnalytics1_connectionString": {
-						"value": "[parameters('AzureSynapseAnalytics1_connectionString')]"
-					},
-					"AzureSynapseAnalytics2_connectionString": {
-						"value": "[parameters('AzureSynapseAnalytics2_connectionString')]"
-					},
-					"AzureSynapseAnalytics834_connectionString": {
-						"value": "[parameters('AzureSynapseAnalytics834_connectionString')]"
-					},
-					"AzureSynapseAnalytics837D_connectionString": {
-						"value": "[parameters('AzureSynapseAnalytics837D_connectionString')]"
-					},
-					"AzureSynapseAnalytics837I_connectionString": {
-						"value": "[parameters('AzureSynapseAnalytics837I_connectionString')]"
-					},
-					"AzureSynapseAnalyticsHL7ADT02_connectionString": {
-						"value": "[parameters('AzureSynapseAnalyticsHL7ADT02_connectionString')]"
-					},
-					"AzureSynapseAnalyticsHL7_ADT01_connectionString": {
-						"value": "[parameters('AzureSynapseAnalyticsHL7_ADT01_connectionString')]"
-					},
-					"AzureSynapseAnalyticsHL7_ADT03_connectionString": {
-						"value": "[parameters('AzureSynapseAnalyticsHL7_ADT03_connectionString')]"
-					},
-					"AzureSynapseAnalyticsHL7_ADT05_connectionString": {
-						"value": "[parameters('AzureSynapseAnalyticsHL7_ADT05_connectionString')]"
-					},
-					"AzureDataLakeStorage_properties_typeProperties_url": {
-						"value": "[parameters('AzureDataLakeStorage_properties_typeProperties_url')]"
-					}
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "adf-biomatric_ArmTemplate_1",
-			"type": "Microsoft.Resources/deployments",
-			"apiVersion": "2018-02-01",
-			"properties": {
-				"mode": "incremental",
-				"templateLink": {
-					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
-					"contentVersion": "1.0.0.0"
-				},
-				"parameters": {
-					"factoryName": {
-						"value": "[parameters('factoryName')]"
-					},
-					"AzureSynapseAnalyticsHL7_ADT08_connectionString": {
-						"value": "[parameters('AzureSynapseAnalyticsHL7_ADT08_connectionString')]"
-					},
 					"af-decryptBlob_functionKey": {
 						"value": "[parameters('af-decryptBlob_functionKey')]"
 					},
@@ -339,39 +115,6 @@
 					"blob_biometric_linked_accountKey": {
 						"value": "[parameters('blob_biometric_linked_accountKey')]"
 					},
-					"fileservicelinkedservice_password": {
-						"value": "[parameters('fileservicelinkedservice_password')]"
-					},
-					"linkedService274_connectionString": {
-						"value": "[parameters('linkedService274_connectionString')]"
-					},
-					"linkedService834_connectionString": {
-						"value": "[parameters('linkedService834_connectionString')]"
-					},
-					"linkedService837D_connectionString": {
-						"value": "[parameters('linkedService837D_connectionString')]"
-					},
-					"linkedService837I_connectionString": {
-						"value": "[parameters('linkedService837I_connectionString')]"
-					},
-					"linkedService837P_connectionString": {
-						"value": "[parameters('linkedService837P_connectionString')]"
-					},
-					"linkedServiceHL7ADT02_connectionString": {
-						"value": "[parameters('linkedServiceHL7ADT02_connectionString')]"
-					},
-					"linkedServiceHL7ADT05_connectionString": {
-						"value": "[parameters('linkedServiceHL7ADT05_connectionString')]"
-					},
-					"linkedServiceHL7_ADT01_connectionString": {
-						"value": "[parameters('linkedServiceHL7_ADT01_connectionString')]"
-					},
-					"linkedServiceHL7_ADT05_connectionString": {
-						"value": "[parameters('linkedServiceHL7_ADT05_connectionString')]"
-					},
-					"linkedServiceHL7_ADT08_connectionString": {
-						"value": "[parameters('linkedServiceHL7_ADT08_connectionString')]"
-					},
 					"saEdiProcessorBatch_connectionString": {
 						"value": "[parameters('saEdiProcessorBatch_connectionString')]"
 					},
@@ -380,6 +123,9 @@
 					},
 					"sftpsource_password": {
 						"value": "[parameters('sftpsource_password')]"
+					},
+					"batchEditProcessor_accessKey": {
+						"value": "[parameters('batchEditProcessor_accessKey')]"
 					},
 					"af-decryptBlob_properties_typeProperties_functionAppUrl": {
 						"value": "[parameters('af-decryptBlob_properties_typeProperties_functionAppUrl')]"
@@ -393,12 +139,6 @@
 					"blob_biometric_linked_properties_typeProperties_url": {
 						"value": "[parameters('blob_biometric_linked_properties_typeProperties_url')]"
 					},
-					"fileservicelinkedservice_properties_typeProperties_host": {
-						"value": "[parameters('fileservicelinkedservice_properties_typeProperties_host')]"
-					},
-					"fileservicelinkedservice_properties_typeProperties_userId": {
-						"value": "[parameters('fileservicelinkedservice_properties_typeProperties_userId')]"
-					},
 					"sftp_biometric_linked_properties_typeProperties_host": {
 						"value": "[parameters('sftp_biometric_linked_properties_typeProperties_host')]"
 					},
@@ -410,29 +150,6 @@
 					},
 					"sftpsource_properties_typeProperties_userName": {
 						"value": "[parameters('sftpsource_properties_typeProperties_userName')]"
-					}
-				}
-			},
-			"dependsOn": [
-				"[resourceId('Microsoft.Resources/deployments', 'adf-biomatric_ArmTemplate_0')]"
-			]
-		},
-		{
-			"name": "adf-biomatric_ArmTemplate_2",
-			"type": "Microsoft.Resources/deployments",
-			"apiVersion": "2018-02-01",
-			"properties": {
-				"mode": "incremental",
-				"templateLink": {
-					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_2.json', parameters('containerSasToken'))]",
-					"contentVersion": "1.0.0.0"
-				},
-				"parameters": {
-					"factoryName": {
-						"value": "[parameters('factoryName')]"
-					},
-					"batchEditProcessor_accessKey": {
-						"value": "[parameters('batchEditProcessor_accessKey')]"
 					},
 					"batchEditProcessor_properties_typeProperties_accountName": {
 						"value": "[parameters('batchEditProcessor_properties_typeProperties_accountName')]"
@@ -445,9 +162,7 @@
 					}
 				}
 			},
-			"dependsOn": [
-				"[resourceId('Microsoft.Resources/deployments', 'adf-biomatric_ArmTemplate_1')]"
-			]
+			"dependsOn": []
 		}
 	]
 }

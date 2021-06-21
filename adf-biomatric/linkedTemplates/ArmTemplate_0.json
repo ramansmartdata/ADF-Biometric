@@ -7,89 +7,77 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adf-biomatric"
 		},
-		"AZSQL837I_connectionString": {
+		"af-decryptBlob_functionKey": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AZSQL837I'"
+			"metadata": "Secure string for 'functionKey' of 'af-decryptBlob'"
 		},
-		"AZSQL837p_connectionString": {
+		"bioMetricHealthSFTP_password": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AZSQL837p'"
+			"metadata": "Secure string for 'password' of 'bioMetricHealthSFTP'"
 		},
-		"AZSQLHL7_ADT01_connectionString": {
+		"blob_biometric_linked_accountKey": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AZSQLHL7_ADT01'"
+			"metadata": "Secure string for 'accountKey' of 'blob_biometric_linked'"
 		},
-		"AZSQLHL7_ADT02_connectionString": {
+		"saEdiProcessorBatch_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AZSQLHL7_ADT02'"
+			"metadata": "Secure string for 'connectionString' of 'saEdiProcessorBatch'"
 		},
-		"AZSQLHL7_ADT03_connectionString": {
+		"sftp_biometric_linked_password": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AZSQLHL7_ADT03'"
+			"metadata": "Secure string for 'password' of 'sftp_biometric_linked'"
 		},
-		"AZSQLHL7_ADT05_connectionString": {
+		"sftpsource_password": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AZSQLHL7_ADT05'"
+			"metadata": "Secure string for 'password' of 'sftpsource'"
 		},
-		"AZSQLHL7_ADT08_connectionString": {
+		"batchEditProcessor_accessKey": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AZSQLHL7_ADT08'"
+			"metadata": "Secure string for 'accessKey' of 'batchEditProcessor'"
 		},
-		"AZSql834_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AZSql834'"
-		},
-		"AZSql837D_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AZSql837D'"
-		},
-		"AzureDataLakeStorage_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage'"
-		},
-		"AzureSQL274DB_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSQL274DB'"
-		},
-		"AzureSynapseAnalytics1_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalytics1'"
-		},
-		"AzureSynapseAnalytics2_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalytics2'"
-		},
-		"AzureSynapseAnalytics834_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalytics834'"
-		},
-		"AzureSynapseAnalytics837D_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalytics837D'"
-		},
-		"AzureSynapseAnalytics837I_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalytics837I'"
-		},
-		"AzureSynapseAnalyticsHL7ADT02_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalyticsHL7ADT02'"
-		},
-		"AzureSynapseAnalyticsHL7_ADT01_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalyticsHL7_ADT01'"
-		},
-		"AzureSynapseAnalyticsHL7_ADT03_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalyticsHL7_ADT03'"
-		},
-		"AzureSynapseAnalyticsHL7_ADT05_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalyticsHL7_ADT05'"
-		},
-		"AzureDataLakeStorage_properties_typeProperties_url": {
+		"af-decryptBlob_properties_typeProperties_functionAppUrl": {
 			"type": "string",
-			"defaultValue": "https://azdatalakev2.dfs.core.windows.net"
+			"defaultValue": "https://fa-decryptfile.azurewebsites.net"
+		},
+		"bioMetricHealthSFTP_properties_typeProperties_host": {
+			"type": "string",
+			"defaultValue": "20.81.27.30"
+		},
+		"bioMetricHealthSFTP_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": " AZBiometricHealth"
+		},
+		"blob_biometric_linked_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://sabiometric.dfs.core.windows.net"
+		},
+		"sftp_biometric_linked_properties_typeProperties_host": {
+			"type": "string",
+			"defaultValue": "sjgm3yzmtomr6.eastus.azurecontainer.io"
+		},
+		"sftp_biometric_linked_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "AZBiometricHealth"
+		},
+		"sftpsource_properties_typeProperties_host": {
+			"type": "string",
+			"defaultValue": "40.114.118.70"
+		},
+		"sftpsource_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "azlinuxVM"
+		},
+		"batchEditProcessor_properties_typeProperties_accountName": {
+			"type": "string",
+			"defaultValue": "babiomatric"
+		},
+		"batchEditProcessor_properties_typeProperties_batchUri": {
+			"type": "string",
+			"defaultValue": "https://babiomatric.eastus.batch.azure.com"
+		},
+		"batchEditProcessor_properties_typeProperties_poolName": {
+			"type": "string",
+			"defaultValue": "babiomatricpoolmultitask"
 		}
 	},
 	"variables": {
@@ -97,269 +85,467 @@
 	},
 	"resources": [
 		{
-			"name": "[concat(parameters('factoryName'), '/AZSQL837I')]",
+			"name": "[concat(parameters('factoryName'), '/af-decryptBlob')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"type": "AzureSqlDatabase",
+				"type": "AzureFunction",
 				"typeProperties": {
-					"connectionString": "[parameters('AZSQL837I_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AZSQL837p')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureSqlDatabase",
-				"typeProperties": {
-					"connectionString": "[parameters('AZSQL837p_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AZSQLHL7_ADT01')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureSqlDatabase",
-				"typeProperties": {
-					"connectionString": "[parameters('AZSQLHL7_ADT01_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AZSQLHL7_ADT02')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureSqlDatabase",
-				"typeProperties": {
-					"connectionString": "[parameters('AZSQLHL7_ADT02_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AZSQLHL7_ADT03')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureSqlDatabase",
-				"typeProperties": {
-					"connectionString": "[parameters('AZSQLHL7_ADT03_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AZSQLHL7_ADT05')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureSqlDatabase",
-				"typeProperties": {
-					"connectionString": "[parameters('AZSQLHL7_ADT05_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AZSQLHL7_ADT08')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureSqlDatabase",
-				"typeProperties": {
-					"connectionString": "[parameters('AZSQLHL7_ADT08_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AZSql834')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureSqlDatabase",
-				"typeProperties": {
-					"connectionString": "[parameters('AZSql834_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AZSql837D')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureSqlDatabase",
-				"typeProperties": {
-					"connectionString": "[parameters('AZSql837D_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureDataLakeStorage')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobFS",
-				"typeProperties": {
-					"url": "[parameters('AzureDataLakeStorage_properties_typeProperties_url')]",
-					"accountKey": {
+					"functionAppUrl": "[parameters('af-decryptBlob_properties_typeProperties_functionAppUrl')]",
+					"functionKey": {
 						"type": "SecureString",
-						"value": "[parameters('AzureDataLakeStorage_accountKey')]"
+						"value": "[parameters('af-decryptBlob_functionKey')]"
 					}
 				}
 			},
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/AzureSQL274DB')]",
+			"name": "[concat(parameters('factoryName'), '/bioMetricHealthSFTP')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
 			"properties": {
-				"description": "AzureSQL274DB",
 				"annotations": [],
-				"type": "AzureSqlDatabase",
+				"type": "Sftp",
 				"typeProperties": {
-					"connectionString": "[parameters('AzureSQL274DB_connectionString')]"
+					"host": "[parameters('bioMetricHealthSFTP_properties_typeProperties_host')]",
+					"port": 22,
+					"skipHostKeyValidation": true,
+					"authenticationType": "Basic",
+					"userName": "[parameters('bioMetricHealthSFTP_properties_typeProperties_userName')]",
+					"password": {
+						"type": "SecureString",
+						"value": "[parameters('bioMetricHealthSFTP_password')]"
+					}
 				}
 			},
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/AzureSynapseAnalytics1')]",
+			"name": "[concat(parameters('factoryName'), '/blob_biometric_linked')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"type": "AzureSqlDW",
+				"type": "AzureBlobFS",
 				"typeProperties": {
-					"connectionString": "[parameters('AzureSynapseAnalytics1_connectionString')]"
+					"url": "[parameters('blob_biometric_linked_properties_typeProperties_url')]",
+					"accountKey": {
+						"type": "SecureString",
+						"value": "[parameters('blob_biometric_linked_accountKey')]"
+					}
 				}
 			},
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/AzureSynapseAnalytics2')]",
+			"name": "[concat(parameters('factoryName'), '/saEdiProcessorBatch')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"type": "AzureSqlDW",
+				"type": "AzureBlobStorage",
 				"typeProperties": {
-					"connectionString": "[parameters('AzureSynapseAnalytics2_connectionString')]"
+					"connectionString": "[parameters('saEdiProcessorBatch_connectionString')]"
 				}
 			},
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/AzureSynapseAnalytics834')]",
+			"name": "[concat(parameters('factoryName'), '/sftp_biometric_linked')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"type": "AzureSqlDW",
+				"type": "Sftp",
 				"typeProperties": {
-					"connectionString": "[parameters('AzureSynapseAnalytics834_connectionString')]"
+					"host": "[parameters('sftp_biometric_linked_properties_typeProperties_host')]",
+					"port": 22,
+					"skipHostKeyValidation": true,
+					"authenticationType": "Basic",
+					"userName": "[parameters('sftp_biometric_linked_properties_typeProperties_userName')]",
+					"password": {
+						"type": "SecureString",
+						"value": "[parameters('sftp_biometric_linked_password')]"
+					}
 				}
 			},
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/AzureSynapseAnalytics837D')]",
+			"name": "[concat(parameters('factoryName'), '/sftpsource')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"type": "AzureSqlDW",
+				"type": "Sftp",
 				"typeProperties": {
-					"connectionString": "[parameters('AzureSynapseAnalytics837D_connectionString')]"
+					"host": "[parameters('sftpsource_properties_typeProperties_host')]",
+					"port": 22,
+					"skipHostKeyValidation": true,
+					"authenticationType": "Basic",
+					"userName": "[parameters('sftpsource_properties_typeProperties_userName')]",
+					"password": {
+						"type": "SecureString",
+						"value": "[parameters('sftpsource_password')]"
+					}
 				}
 			},
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/AzureSynapseAnalytics837I')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"name": "[concat(parameters('factoryName'), '/csvSource')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
+				"linkedServiceName": {
+					"referenceName": "sftp_biometric_linked",
+					"type": "LinkedServiceReference"
+				},
+				"parameters": {
+					"filename": {
+						"type": "string",
+						"defaultValue": "Sample-Spreadsheet-10-rows.csv"
+					}
+				},
 				"annotations": [],
-				"type": "AzureSqlDW",
+				"type": "DelimitedText",
 				"typeProperties": {
-					"connectionString": "[parameters('AzureSynapseAnalytics837I_connectionString')]"
-				}
+					"location": {
+						"type": "SftpLocation",
+						"folderPath": "/upload/Inbound"
+					},
+					"columnDelimiter": ",",
+					"escapeChar": "\\",
+					"quoteChar": "\""
+				},
+				"schema": [
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					}
+				]
 			},
-			"dependsOn": []
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/sftp_biometric_linked')]"
+			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/AzureSynapseAnalyticsHL7ADT02')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"name": "[concat(parameters('factoryName'), '/rawFiles_SinkDataset')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
+				"linkedServiceName": {
+					"referenceName": "blob_biometric_linked",
+					"type": "LinkedServiceReference"
+				},
 				"annotations": [],
-				"type": "AzureSqlDW",
+				"type": "DelimitedText",
 				"typeProperties": {
-					"connectionString": "[parameters('AzureSynapseAnalyticsHL7ADT02_connectionString')]"
-				}
+					"location": {
+						"type": "AzureBlobFSLocation",
+						"fileSystem": "raw"
+					},
+					"columnDelimiter": ",",
+					"escapeChar": "\\",
+					"quoteChar": "\""
+				},
+				"schema": []
 			},
-			"dependsOn": []
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/blob_biometric_linked')]"
+			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/AzureSynapseAnalyticsHL7_ADT01')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"name": "[concat(parameters('factoryName'), '/rawsource_dataset')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
+				"linkedServiceName": {
+					"referenceName": "sftp_biometric_linked",
+					"type": "LinkedServiceReference"
+				},
 				"annotations": [],
-				"type": "AzureSqlDW",
+				"type": "DelimitedText",
 				"typeProperties": {
-					"connectionString": "[parameters('AzureSynapseAnalyticsHL7_ADT01_connectionString')]"
-				}
+					"location": {
+						"type": "SftpLocation",
+						"folderPath": "/upload/Inbound"
+					},
+					"columnDelimiter": ",",
+					"escapeChar": "\\",
+					"quoteChar": "\""
+				},
+				"schema": []
 			},
-			"dependsOn": []
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/sftp_biometric_linked')]"
+			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/AzureSynapseAnalyticsHL7_ADT03')]",
+			"name": "[concat(parameters('factoryName'), '/batchEditProcessor')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"type": "AzureSqlDW",
+				"type": "AzureBatch",
 				"typeProperties": {
-					"connectionString": "[parameters('AzureSynapseAnalyticsHL7_ADT03_connectionString')]"
+					"accountName": "[parameters('batchEditProcessor_properties_typeProperties_accountName')]",
+					"accessKey": {
+						"type": "SecureString",
+						"value": "[parameters('batchEditProcessor_accessKey')]"
+					},
+					"batchUri": "[parameters('batchEditProcessor_properties_typeProperties_batchUri')]",
+					"poolName": "[parameters('batchEditProcessor_properties_typeProperties_poolName')]",
+					"linkedServiceName": {
+						"referenceName": "saEdiProcessorBatch",
+						"type": "LinkedServiceReference"
+					}
 				}
 			},
-			"dependsOn": []
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/saEdiProcessorBatch')]"
+			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/AzureSynapseAnalyticsHL7_ADT05')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"name": "[concat(parameters('factoryName'), '/sftpCopyData')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
+				"description": "Run dataflow with Explicit copy to ingest copy source",
+				"activities": [
+					{
+						"name": "LoadData",
+						"type": "Copy",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"source": {
+								"type": "DelimitedTextSource",
+								"storeSettings": {
+									"type": "SftpReadSettings",
+									"recursive": true,
+									"wildcardFolderPath": "upload/Inbound",
+									"wildcardFileName": "*",
+									"enablePartitionDiscovery": false
+								},
+								"formatSettings": {
+									"type": "DelimitedTextReadSettings"
+								}
+							},
+							"sink": {
+								"type": "DelimitedTextSink",
+								"storeSettings": {
+									"type": "AzureBlobFSWriteSettings"
+								},
+								"formatSettings": {
+									"type": "DelimitedTextWriteSettings",
+									"quoteAllText": true,
+									"fileExtension": ""
+								}
+							},
+							"enableStaging": false
+						},
+						"inputs": [
+							{
+								"referenceName": "csvSource",
+								"type": "DatasetReference",
+								"parameters": {
+									"filename": "Sample-Spreadsheet-10-rows.csv"
+								}
+							}
+						],
+						"outputs": [
+							{
+								"referenceName": "rawFiles_SinkDataset",
+								"type": "DatasetReference",
+								"parameters": {}
+							}
+						]
+					},
+					{
+						"name": "Get Metadata1",
+						"type": "GetMetadata",
+						"dependsOn": [
+							{
+								"activity": "LoadData",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"dataset": {
+								"referenceName": "rawFiles_SinkDataset",
+								"type": "DatasetReference",
+								"parameters": {}
+							},
+							"fieldList": [
+								"childItems"
+							],
+							"storeSettings": {
+								"type": "AzureBlobFSReadSettings",
+								"recursive": true,
+								"enablePartitionDiscovery": false
+							},
+							"formatSettings": {
+								"type": "DelimitedTextReadSettings"
+							}
+						}
+					},
+					{
+						"name": "ForEach1",
+						"type": "ForEach",
+						"dependsOn": [
+							{
+								"activity": "Get Metadata1",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"userProperties": [
+							{
+								"name": "item",
+								"value": "@item()"
+							}
+						],
+						"typeProperties": {
+							"items": {
+								"value": "@activity('Get Metadata1').output.childItems",
+								"type": "Expression"
+							},
+							"activities": [
+								{
+									"name": "Azure Function1",
+									"type": "AzureFunctionActivity",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"functionName": {
+											"value": "@concat('decryptFile/',item().name)",
+											"type": "Expression"
+										},
+										"method": "POST",
+										"headers": {},
+										"body": {
+											"value": "{\"filename\":\"@{item().name}\"}",
+											"type": "Expression"
+										}
+									},
+									"linkedServiceName": {
+										"referenceName": "af-decryptBlob",
+										"type": "LinkedServiceReference"
+									}
+								},
+								{
+									"name": "Custom1",
+									"type": "Custom",
+									"dependsOn": [
+										{
+											"activity": "Azure Function1",
+											"dependencyConditions": [
+												"Succeeded"
+											]
+										}
+									],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"command": {
+											"value": "cmd  /C \"7z e -y %AZ_BATCH_TASK_WORKING_DIR%\\EdiParserProd.7z  &&  ediFabricParser\"",
+											"type": "Expression"
+										},
+										"resourceLinkedService": {
+											"referenceName": "saEdiProcessorBatch",
+											"type": "LinkedServiceReference"
+										},
+										"folderPath": "applications/EdiParser",
+										"extendedProperties": {
+											"fileName": {
+												"value": "@item().name",
+												"type": "Expression"
+											}
+										},
+										"referenceObjects": {
+											"linkedServices": [],
+											"datasets": []
+										}
+									},
+									"linkedServiceName": {
+										"referenceName": "batchEditProcessor",
+										"type": "LinkedServiceReference"
+									}
+								}
+							]
+						}
+					}
+				],
 				"annotations": [],
-				"type": "AzureSqlDW",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureSynapseAnalyticsHL7_ADT05_connectionString')]"
-				}
+				"lastPublishTime": "2021-06-08T08:45:09Z"
 			},
-			"dependsOn": []
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/csvSource')]",
+				"[concat(variables('factoryId'), '/datasets/rawFiles_SinkDataset')]",
+				"[concat(variables('factoryId'), '/linkedServices/af-decryptBlob')]",
+				"[concat(variables('factoryId'), '/linkedServices/saEdiProcessorBatch')]",
+				"[concat(variables('factoryId'), '/linkedServices/batchEditProcessor')]"
+			]
 		}
 	]
 }
